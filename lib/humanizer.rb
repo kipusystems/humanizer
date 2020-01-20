@@ -11,6 +11,10 @@ module Humanizer
     humanizer_questions[humanizer_question_id.to_i]["question"]
   end
 
+  def humanizer_images
+    humanizer_questions[humanizer_question_id.to_i]["images"]
+  end
+
   def humanizer_question_id
     (@humanizer_question_id ||= random_humanizer_question_id).to_i
   end
